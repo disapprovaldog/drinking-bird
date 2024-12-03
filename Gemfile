@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "buildkiterb", "~> 1.0.1"
+gem "buildkiterb", github: "disapprovaldog/buildkiterb", branch: "passparams"
 gem "faraday"
 gem "standard"
