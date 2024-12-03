@@ -12,7 +12,7 @@ end
 
 pipeline_cache_files=Dir["pipelines*.yml"]
 
-pipelines_cache_files.grep_v("pipelines-#{Date.today.to_s}.yml").each do |filename|
+pipeline_cache_files.grep_v("pipelines-#{Date.today.to_s}.yml").each do |filename|
   FileUtils.rm_rf filename
 end
 
